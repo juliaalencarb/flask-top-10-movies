@@ -13,7 +13,7 @@ def create_app(env=None):
         pass
     else:
         app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////application/database/movies.db'
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///movies.db'
         app.config["DEBUG"] = True
         Bootstrap(app)
 
